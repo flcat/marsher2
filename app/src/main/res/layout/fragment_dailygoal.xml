@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#5C61FD"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/marsherGoal"
+        tools:ignore="SpUsage"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"/>
+    <view
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_gravity="end"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+
+            />
+</LinearLayout>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_spinner"
+        android:padding="25dp"
+        android:layout_marginTop="200dp"
+        />
+<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight"
+        android:hint="@string/weight"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:padding="25dp"/>
+<androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/training"
+        android:text="Training"
+        android:textSize="20sp"
+        thumbTextPadding="100dp"
+        android:layout_marginLeft="5dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage"
+        android:padding="25dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            android:id="@+id/seekbar_water"
+                android:layout_gravity="center"/>
+        <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_water"
+                android:hint="1000ml"
+                tools:ignore="Autofill,HardcodedText"
+                android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

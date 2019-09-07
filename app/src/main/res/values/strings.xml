@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">marsher</string>
+    <string name="spinner_title01">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="next">Next</string>
+    <string name="marsherGoal">Marsher Goal</string>
+    <string name="notifications">Notifications</string>
+
+</resources>

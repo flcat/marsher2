@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/training"
+            android:text="@string/notifications"
+            android:textSize="20sp"
+            thumbTextPadding="100dp"
+            android:layout_marginLeft="5dp"
+            android:padding="25dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            tools:ignore="HardcodedText"
+            android:textSize="20sp"/>
+    <view
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:00"
+            tools:ignore="HardcodedText"
+            android:textSize="20sp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+</LinearLayout>
